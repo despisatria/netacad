@@ -301,23 +301,23 @@
                                 <div class="funkyradio">
                                   <div class="funkyradio-success">
                                       <input type="radio" name="radio" id="radio1" />
-                                      <label for="radio1">aaa</label>
+                                      <label for="radio1">20.2</label>
                                   </div>
                                   <div class="funkyradio-success">
                                       <input type="radio" name="radio" id="radio2"/>
-                                      <label for="radio2">bbb</label>
+                                      <label for="radio2">168.20.2</label>
                                   </div>
                                   <div class="funkyradio-success">
                                       <input type="radio" name="radio" id="radio3" />
-                                      <label for="radio3">ccc</label>
+                                      <label for="radio3">200</label>
                                   </div>
                                   <div class="funkyradio-success">
                                       <input type="radio" name="radio" id="radio4" />
-                                      <label for="radio4">ddd</label>
+                                      <label for="radio4">2</label>
                                   </div>
                                   <div class="funkyradio-success">
                                       <input type="radio" name="radio" id="radio5" />
-                                      <label for="radio5">eee</label>
+                                      <label for="radio5">200.168.20</label>
                                   </div>
                                 </div>
                               </div>
