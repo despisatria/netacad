@@ -20,7 +20,7 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-
+    
     use RegistersUsers;
 
     /**
@@ -50,8 +50,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email' => ['required', 'string'],
+            'password' => ['required', 'string',],
         ]);
     }
 
@@ -65,6 +65,8 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'nim' => $data['nim'],
+            'level' => $data['level'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

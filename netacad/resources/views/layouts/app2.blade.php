@@ -42,11 +42,17 @@
                             <div class='tab-card daftar-form'>
                             <h3>Daftarkan akun Anda</h3>
                             <form action='{{ route('register') }}' class='form-signin' method='POST'>
+                                @csrf
+                                <input type="hidden" name="level" value="1">
                                 <div class='form-group'>
-                                <input type='text' class='form-control' id='nama' name='nama' placeholder='Nama Lengkap'>
+                                <input type='text' class='form-control' id='nama' name='name' placeholder='Nama Lengkap'>
                                 </div>
                                 <div class='form-group'>
                                 <input type='text' class='form-control' id='nim' name='nim' placeholder='NIM'>
+                                </div>
+                                <div class='form-group'>
+                                <input type='email' class='form-control' id='password' name='email' placeholder='Email'>
+                                <input type="hidden" name="level">
                                 </div>
                                 <div class='form-group'>
                                 <input type='password' class='form-control' id='password' name='password' placeholder='Kata Sandi'>
@@ -62,10 +68,10 @@
                             <form action='{{ route('login') }}' class='form-signin' method='POST'>
                                 @csrf
                                 <div class='form-group'>
-                                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                                    <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIM" required autofocus>
                                 </div>
                                 <div class='form-group'>
-                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="*********" required>
                                 </div>
                                 <button type='submit' class='btn btn-success sign-button'>Masuk</button>
                             </form>

@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (Auth::user()->level == 0) {
+        if (Auth::user()->level == 1 || Auth::user()->level == NULL) {
             // siswa
             return view('dashboard');
         } else {
@@ -38,7 +38,10 @@ class HomeController extends Controller
     }
 
     public function networking() {
-        return view("networking");
+        $files = FileUpload::where("user_id", Auth::user()->id)
+                ->where("materi", "=", "basic-networking")->first();
+                // dd(Storage::url($files->lokasi));
+        return view("networking", ['files' => $files]);
     }
 
     public function ipaddress() {
@@ -66,6 +69,7 @@ class HomeController extends Controller
         $file = FileUpload::create([
             'nama' => $uploadedFile->getClientOriginalName(),
             'lokasi' => $path,
+            'materi' => $request->materi,
             'user_id' => Auth::user()->id
         ]);
 

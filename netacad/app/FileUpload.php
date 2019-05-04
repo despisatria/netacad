@@ -10,6 +10,7 @@ class FileUpload extends Model
     protected $fillable  = [
         'nama',
         'lokasi',
+        'materi',
         'user_id'
     ];
 }

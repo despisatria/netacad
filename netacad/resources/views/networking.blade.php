@@ -52,13 +52,18 @@
                     <span class="setting-informasi">Silahkan unggah file Cisco Packet Tracer (.pkt) yang anda buat</span><br>
                     <form action="{{ url('upload') }}" method="post" class="form-signin" enctype="multipart/form-data">
                         @csrf
+                        <input type="hidden" class="form-control" name='materi' value="basic-networking" id="nama">
                         <div class="form-group">
                           <input type="file" class="form-control" name='file' id="nama">
                         </div>
                         <div class="menu-card-class">
                           <div class="row">
+                            <div class="col-md-6" style="text-align: left;">
+                                    <a href="{{url(Storage::url($files->lokasi))}}">{{$files->nama}}</a>
+                            </div>
+
                             <div class="col-md-6">
-                              <input type="submit" name="submit" class="btn btn-success" value="Unggah"></input>
+                              <input type="submit" name="submit" class="btn btn-success" value="Unggah">
                             </div>
                           </div>
                         </div>

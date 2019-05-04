@@ -18,6 +18,7 @@ class CreateFilesTable extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->string('nama', 255);
             $table->string('lokasi', 255);
+            $table->string('materi', 255)->nullable();
             $table->timestamps(); 
             
             // $table->foreign('user_id')
