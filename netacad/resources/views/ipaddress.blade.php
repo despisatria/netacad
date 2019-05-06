@@ -63,17 +63,25 @@
                       <h1>Unggah File Latihan Praktik</h1>
                       <span class="setting-informasi">Silahkan unggah file Cisco Packet Tracer (.pkt) yang anda buat</span><br>
                       <form action="{{ url('upload') }}" method="post" class="form-signin" enctype="multipart/form-data">
-                        <div class="form-group">
-                          <input type="file" class="form-control" name='file' id="nama">
-                        </div>
-                        <div class="menu-card-class">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <input type="submit" name="submit" class="btn btn-success" value="Unggah"></input>
+                          @csrf
+                          <input type="hidden" class="form-control" name='materi' value="ipaddress" id="nama">
+                          <div class="form-group">
+                            <input type="file" class="form-control" name='file' id="nama">
+                          </div>
+                          <div class="menu-card-class">
+                            <div class="row">
+                              @if ($files != NULL)
+                                <div class="col-md-6" style="text-align: left;">
+                                        <a href="{{url(Storage::url($files->lokasi))}}">{{$files->nama}}</a>
+                                </div>
+                              @endif
+
+                              <div class="col-md-6">
+                                <input type="submit" name="submit" class="btn btn-success" value="Unggah">
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </form>
+                        </form>
                     </div>
                   </div>
                 </div>

@@ -7,7 +7,8 @@ use Auth;
 use Illuminate\Http\File as File;
 use App\FileUpload;
 use Illuminate\Support\Facades\Storage;
-
+use Redirect;
+use App\Soal;
 
 class HomeController extends Controller
 {
@@ -45,21 +46,82 @@ class HomeController extends Controller
     }
 
     public function ipaddress() {
-        return view("ipaddress");
+        $files = FileUpload::where("user_id", Auth::user()->id)
+                ->where("materi", "=", "ipaddress")->first();
+        // dd($files);
+        // if($files == NULL) {
+        //     $files->lolasi = '&nbsp';
+        //     $files->nama = '&nbsp';
+        // }
+        return view("ipaddress", ['files' => $files]);
     }
 
     public function routing() {
-        return view("routing");
+        $files = FileUpload::where("user_id", Auth::user()->id)
+                ->where("materi", "=", "routing")->first();
+        return view("routing", ['files' => $files]);
     }
 
     public function evaluasi() {
         return view("evaluasi");
     }
 
+    public function evaluasiIpaddress() {
+        $files = FileUpload::where("user_id", Auth::user()->id)
+                ->where("materi", "=", "ipaddress")->first();
+        
+        if ($files == NULL) {
+            return view("belumBisaEvaluasi");
+        } else {
+            $datas = Soal::all();
+            $i = 1;
+            foreach ($datas as $data) {
+                $soal[$i] = $data->soal;
+                $pilihanA[$i] = $data->opsiA;
+                $pilihanB[$i] = $data->opsiB;
+                $pilihanC[$i] = $data->opsiC;
+                $pilihanD[$i] = $data->opsiD;
+                $pilihanE[$i] = $data->opsiE;
+                $kunciJawabanA[$i] = $data->a;
+                $kunciJawabanB[$i] = $data->b;
+                $kunciJawabanC[$i] = $data->c;
+                $kunciJawabanD[$i] = $data->d;
+                $kunciJawabanE[$i] = $data->e;
+                $i++;
+            }
+            // dd($soal, $pilihanA, $kunciJawabanA);
+            return view("evaluasiIpaddress", [
+                'soal' => $soal,
+                'pilihanA' => $pilihanA,
+                'pilihanB' => $pilihanB,
+                'pilihanC' => $pilihanC,
+                'pilihanD' => $pilihanD,
+                'pilihanE' => $pilihanE,
+                'kunciJawabanA' => $kunciJawabanA,
+                'kunciJawabanB' => $kunciJawabanB,
+                'kunciJawabanC' => $kunciJawabanC,
+                'kunciJawabanD' => $kunciJawabanD,
+                'kunciJawabanE' => $kunciJawabanE,
+                ]);
+        }
+    }
+
+    public function evaluasiIpaddressPost(Request $request) {
+        $nilai = 0;
+        for ($i=1; $i <= 20; $i++) { 
+            $no = "soal".$i;
+            // $jawaban[$i] = $request->{$no};
+            if ($request->{$no} == 1){
+                $nilai++;
+            }
+        }
+        dd($request, $nilai);
+    }
+
     public function upload(Request $request) {
         $this->validate($request, [
             'name' => 'nullable|max:100',
-            'file' => 'required|file|max:2000'
+            'file' => 'required|file|max:10000'
         ]);
 
         $uploadedFile = $request->file('file');   
@@ -73,6 +135,6 @@ class HomeController extends Controller
             'user_id' => Auth::user()->id
         ]);
 
-        return 'adaw';
+        return Redirect::to('/home');;
     }
 }

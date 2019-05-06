@@ -20,7 +20,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="ipaddress.php">
+            <a href="{{ url('ipaddress') }}">
                 <div class="body-card fadeInUp animated">
                     <div class="thumb-card program2">
                         <div class="thumb-overlay2"></div>
@@ -32,7 +32,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="routing.php">
+            <a href="{{ url('routing') }}">
                 <div class="body-card fadeInUp animated">
                     <div class="thumb-card program4">
                         <div class="thumb-overlay4">

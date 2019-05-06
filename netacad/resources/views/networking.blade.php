@@ -58,9 +58,11 @@
                         </div>
                         <div class="menu-card-class">
                           <div class="row">
-                            <div class="col-md-6" style="text-align: left;">
-                                    <a href="{{url(Storage::url($files->lokasi))}}">{{$files->nama}}</a>
-                            </div>
+                            @if ($files != NULL)
+                                <div class="col-md-6" style="text-align: left;">
+                                        <a href="{{url(Storage::url($files->lokasi))}}">{{$files->nama}}</a>
+                                </div>
+                              @endif
 
                             <div class="col-md-6">
                               <input type="submit" name="submit" class="btn btn-success" value="Unggah">

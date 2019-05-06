@@ -26,7 +26,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>10 Soal</span>
-                    <a href="eval-ipaddress.php" class="btn btn-success">Mulai</a>
+                    <a href="#" class="btn btn-success">Mulai</a>
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
-                    <a href="eval-ipaddress.php" class="btn btn-success">Mulai</a>
+                    <a href="{{ url("/evaluasiIpaddress") }}" class="btn btn-success">Mulai</a>
                   </div>
                 </div>
               </div>

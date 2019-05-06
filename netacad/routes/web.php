@@ -23,3 +23,5 @@ Route::get('/ipaddress', 'HomeController@ipaddress');
 Route::get('/routing', 'HomeController@routing');
 Route::post('/upload', 'HomeController@upload');
 Route::get('/evaluasi', 'HomeController@evaluasi');
+Route::get('/evaluasiIpaddress', 'HomeController@evaluasiIpaddress');
+Route::post('/evaluasiIpaddress', 'HomeController@evaluasiIpaddressPost');
