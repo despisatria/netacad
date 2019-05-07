@@ -8,6 +8,12 @@
 
 </div>
 <div class="col-md-12">
+  @if ($message = Session::get('success'))
+        <div class="alert alert-success alert-block text-center">
+          <button type="button" class="close" data-dismiss="alert">×</button> 
+            <strong>{{ $message }}</strong>
+        </div>
+      @endif
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-2 program-list">

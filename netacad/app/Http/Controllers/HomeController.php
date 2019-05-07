@@ -72,7 +72,8 @@ class HomeController extends Controller
                 ->where("materi", "=", "ipaddress")->first();
         
         if ($files == NULL) {
-            return view("belumBisaEvaluasi");
+            // return view("belumBisaEvaluasi");
+            return Redirect::to('/ipaddress')->with(['success' => 'Selesaikan Materi Terlebih Dahulu!']);
         } else {
             $datas = Soal::all();
             $i = 1;
@@ -120,7 +121,7 @@ class HomeController extends Controller
         $data = new Evaluasi();
         $data->user_id = Auth::user()->id;
         $data->materi = "ipaddress";
-        $data->nilai = $nilai;
+        $data->nilai = $nilai*10/2;
         $data->save();
 
         return Redirect::to("/home");

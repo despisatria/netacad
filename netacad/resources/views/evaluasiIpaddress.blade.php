@@ -17,30 +17,39 @@ NETACAD - Evaluasi Ip Address
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="soal1" >
                         <div class="embed-responsive embed-responsive-16by9">
-                            <h3>{{ $i }}. {!! $soal[$i] !!}</h3>
-                            
-                            <div class="funkyradio">
-                                <div class="funkyradio-success">
-                                    <input type="radio" name="soal{{$i}}" id="radio{{$i}}1" value="{{ $kunciJawabanA[$i] }}" />
-                                    <label for="radio{{$i}}1">{!! $pilihanA[$i] !!} </label>
-                                </div>
-                                <div class="funkyradio-success">
-                                    <input type="radio" name="soal{{$i}}" id="radio{{$i}}2" value="{{ $kunciJawabanB[$i] }}" />
-                                    <label for="radio{{$i}}2">{!! $pilihanB[$i] !!}</label>
-                                </div>
-                                <div class="funkyradio-success">
-                                    <input type="radio" name="soal{{$i}}" id="radio{{$i}}3" value="{{ $kunciJawabanC[$i] }}"  />
-                                    <label for="radio{{$i}}3">{!! $pilihanC[$i] !!}</label>
-                                </div>
-                                <div class="funkyradio-success">
-                                    <input type="radio" name="soal{{$i}}" id="radio{{$i}}4" value="{{ $kunciJawabanD[$i] }}"  />
-                                    <label for="radio{{$i}}4">{!! $pilihanD[$i] !!}</label>
-                                </div>
-                                <div class="funkyradio-success">
-                                    <input type="radio" name="soal{{$i}}" id="radio{{$i}}5" value="{{ $kunciJawabanE[$i] }}"  />
-                                    <label for="radio{{$i}}5">{!! $pilihanE[$i] !!}</label>
-                                </div>
-                            </div>
+                            <table>
+                                <tr>
+                                    <td width="30px" valign="top"><h4>{{ $i }}. </h4></td>
+                                    <td><h4>{!! $soal[$i] !!}</h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="30px"></td>
+                                    <td>
+                                        <div class="funkyradio">
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="soal{{$i}}" id="radio{{$i}}1" value="{{ $kunciJawabanA[$i] }}" />
+                                                <label for="radio{{$i}}1">{!! $pilihanA[$i] !!} </label>
+                                            </div>
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="soal{{$i}}" id="radio{{$i}}2" value="{{ $kunciJawabanB[$i] }}" />
+                                                <label for="radio{{$i}}2">{!! $pilihanB[$i] !!}</label>
+                                            </div>
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="soal{{$i}}" id="radio{{$i}}3" value="{{ $kunciJawabanC[$i] }}"  />
+                                                <label for="radio{{$i}}3">{!! $pilihanC[$i] !!}</label>
+                                            </div>
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="soal{{$i}}" id="radio{{$i}}4" value="{{ $kunciJawabanD[$i] }}"  />
+                                                <label for="radio{{$i}}4">{!! $pilihanD[$i] !!}</label>
+                                            </div>
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="soal{{$i}}" id="radio{{$i}}5" value="{{ $kunciJawabanE[$i] }}"  />
+                                                <label for="radio{{$i}}5">{!! $pilihanE[$i] !!}</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -48,9 +57,9 @@ NETACAD - Evaluasi Ip Address
         </div>
     </div>
     @endfor
-    <div class="row"  style="margin-top: 10px;">
-            <div class="col-md-6 ">
-                <input type="submit" class="btn btn-success"  value="Selesai">
+    <div class="row">
+            <div class="col-md-11 text-center" style="margin-bottom: 50px; margin-top:20px">
+                <input type="submit" class="btn btn-lg btn-success"  value="Selesai Evaluasi">
             </div> 
         </div>
     </div>

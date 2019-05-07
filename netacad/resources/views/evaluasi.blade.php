@@ -5,7 +5,6 @@
 @endsection
 
 @section('content')    
-
 </div>
 <div class="col-md-10 col-md-offset-1">
         <div class="program-card">
@@ -16,7 +15,7 @@
                   <div class="top-card-class">
                     <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
                     &nbsp;&nbsp;
-                    <span> Nilai : 100</span>
+                    <span> Nilai : 80</span>
                     <h3>Basic Networking</h3>
                   </div>
                 </div>
@@ -25,7 +24,7 @@
                     <div class="bar-skill">
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
-                    <span>10 Soal</span>
+                    <span>20 Soal</span>
                     <a href="#" class="btn btn-success">Mulai</a>
                   </div>
                 </div>
@@ -49,7 +48,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
-                    <a href="{{ url("/evaluasiIpaddress") }}" class="btn btn-success">Mulai</a>
+                    <a href="{{ url('/evaluasiIpaddress') }}" class="btn btn-success">Mulai</a>
                   </div>
                 </div>
               </div>
@@ -60,7 +59,7 @@
               <div class="row">
                 <div class="col-md-10">
                   <div class="top-card-class">
-                    <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
+                    <i class="grey fa fa-trophy fa-2x" aria-hidden="true"></i>
                     &nbsp;&nbsp;
                     <span> Nilai : N/A</span>
                     <h3>Network Routing</h3>
@@ -83,7 +82,7 @@
               <div class="row">
                 <div class="col-md-10">
                   <div class="top-card-class">
-                    <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
+                    <i class="grey fa fa-trophy fa-2x" aria-hidden="true"></i>
                     &nbsp;&nbsp;
                     <span> Nilai : N/A</span>
                     <h3>Virtual Local Area Network</h3>
