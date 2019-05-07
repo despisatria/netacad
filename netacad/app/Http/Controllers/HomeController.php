@@ -8,6 +8,7 @@ use Illuminate\Http\File as File;
 use App\FileUpload;
 use Illuminate\Support\Facades\Storage;
 use Redirect;
+use App\Evaluasi;
 use App\Soal;
 
 class HomeController extends Controller
@@ -115,7 +116,14 @@ class HomeController extends Controller
                 $nilai++;
             }
         }
-        dd($request, $nilai);
+        // dd($request, $nilai);
+        $data = new Evaluasi();
+        $data->user_id = Auth::user()->id;
+        $data->materi = "ipaddress";
+        $data->nilai = $nilai;
+        $data->save();
+
+        return Redirect::to("/home");
     }
 
     public function upload(Request $request) {

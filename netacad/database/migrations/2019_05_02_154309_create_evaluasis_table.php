@@ -16,9 +16,9 @@ class CreateEvaluasisTable extends Migration
         Schema::create('evaluasis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
-            $table->bigInteger('soal_id')->unsigned();
-            $table->string('jawaban', 124);
-            $table->string('jawabaBenar', 124);
+            // $table->bigInteger('soal_id')->unsigned();
+            $table->string('materi', 124);
+            $table->integer('nilai');
             $table->timestamps();
 
             // $table->foreign('user_id')
