@@ -49,11 +49,11 @@
                                 </div>
                                 <div class='form-group'>
                                 <input type='text' class='form-control' id='nim' name='nim' placeholder='NIM'>
-                                </div>
+                                </div><!-- 
                                 <div class='form-group'>
                                 <input type='email' class='form-control' id='password' name='email' placeholder='Email'>
                                 <input type="hidden" name="level">
-                                </div>
+                                </div> -->
                                 <div class='form-group'>
                                 <input type='password' class='form-control' id='password' name='password' placeholder='Kata Sandi'>
                                 <input type="hidden" name="level">
@@ -71,7 +71,7 @@
                                     <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIM" required autofocus>
                                 </div>
                                 <div class='form-group'>
-                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="*********" required>
+                                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Kata Sandi" required>
                                 </div>
                                 <button type='submit' class='btn btn-success sign-button'>Masuk</button>
                             </form>

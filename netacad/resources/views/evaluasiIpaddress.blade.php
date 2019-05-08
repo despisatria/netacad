@@ -16,7 +16,7 @@ NETACAD - Evaluasi Ip Address
             <div class="setting-page">
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="soal1" >
-                        <div class="embed-responsive embed-responsive-16by9">
+                        <div class="embed-responsive embed-responsive-16by9-edit">
                             <table>
                                 <tr>
                                     <td width="30px" valign="top"><h4>{{ $i }}. </h4></td>
@@ -58,7 +58,7 @@ NETACAD - Evaluasi Ip Address
     </div>
     @endfor
     <div class="row">
-            <div class="col-md-11 text-center" style="margin-bottom: 50px; margin-top:20px">
+            <div class="col-md-12 text-center" style="margin-bottom: 50px; margin-top:20px">
                 <input type="submit" class="btn btn-lg btn-success"  value="Selesai Evaluasi">
             </div> 
         </div>

@@ -25,7 +25,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
-                    <a href="#" class="btn btn-success">Mulai</a>
+                    <a href="#" class="btn btn-default ">Mulai</a>
                   </div>
                 </div>
               </div>
