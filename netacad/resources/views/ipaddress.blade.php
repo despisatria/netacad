@@ -4,6 +4,38 @@
     NETACAD - Ip Address
 @endsection
 
+@section('sideMenu')
+<div class="nav">
+    <ul class="list-group">
+    <li>
+        <a href="{{ url('home') }}" class="list-group-item active">
+        <i class="fa fa-home fa-2x fa-fw " aria-hidden="true"></i><span> Beranda</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ url('evaluasi') }}" class="list-group-item">
+        <i class="fa fa-book fa-2x fa-fw" aria-hidden="true"></i><span> Evaluasi</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ url('tentang') }}" class="list-group-item">
+        <i class="fa fa-info-circle fa-2x fa-fw" aria-hidden="true"></i><span> Tentang</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ url('logout') }}" class="list-group-item" onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();">
+        <i class="fa fa-sign-out fa-2x fa-fw" aria-hidden="true"></i><span> Keluar</span>
+        
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+        </a>
+    </li>
+    </ul>
+</div>
+@endsection
+
 @section('content')    
 
 </div>

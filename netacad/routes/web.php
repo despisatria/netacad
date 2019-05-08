@@ -17,7 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/tentang', function() {
+    return view('about');
+});
+Route::get('/home', 'HomeController@index');
 Route::get('/networking', 'HomeController@networking');
 Route::get('/ipaddress', 'HomeController@ipaddress');
 Route::get('/routing', 'HomeController@routing');
@@ -25,3 +28,4 @@ Route::post('/upload', 'HomeController@upload');
 Route::get('/evaluasi', 'HomeController@evaluasi');
 Route::get('/evaluasiIpaddress', 'HomeController@evaluasiIpaddress');
 Route::post('/evaluasiIpaddress', 'HomeController@evaluasiIpaddressPost');
+Route::get('/result-ipaddress', 'HomeController@resultIpaddress');

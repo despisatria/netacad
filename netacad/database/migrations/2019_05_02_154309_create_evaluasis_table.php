@@ -21,8 +21,8 @@ class CreateEvaluasisTable extends Migration
             $table->integer('nilai');
             $table->timestamps();
 
-            // $table->foreign('user_id')
-            //     ->references('id')->on('users'); 
+            $table->foreign('user_id')
+                ->references('id')->on('users'); 
             //     $table->foreign('soal_id')
             //     ->references('r_id')
             //     ->references('id')->on('users'); 

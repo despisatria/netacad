@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Storage;
 use Redirect;
 use App\Evaluasi;
 use App\Soal;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -30,12 +31,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (Auth::user()->level == 1 || Auth::user()->level == NULL) {
+        // dd(Auth::user()->level);
+        if (Auth::user()->level == 1 ) {
             // siswa
             return view('dashboard');
-        } else {
+        } else if (Auth::user()->level == 0) {
             // guru
-            return view('admin-dashboard');
+            return view('amin-dashboard');
         }
     }
 
@@ -49,11 +51,7 @@ class HomeController extends Controller
     public function ipaddress() {
         $files = FileUpload::where("user_id", Auth::user()->id)
                 ->where("materi", "=", "ipaddress")->first();
-        // dd($files);
-        // if($files == NULL) {
-        //     $files->lolasi = '&nbsp';
-        //     $files->nama = '&nbsp';
-        // }
+        
         return view("ipaddress", ['files' => $files]);
     }
 
@@ -145,5 +143,17 @@ class HomeController extends Controller
         ]);
 
         return Redirect::to('/home');;
+    }
+
+    public function resultIpaddress() {
+        $evaluasi = Evaluasi::all();
+        $user = User::all();
+        $jumlahEvaluasi = Evaluasi::all()->count();
+        // $users = $evaluasi->user()
+        //     ->with('evaluasis') // bring along details of the friend
+        //     ->join('users', 'users.user_id', '=', 'evaluasis.user_id')
+        //     ->get(['users.*']);
+        // dd($evaluasi[0]->user);
+        return view('result-ipaddress', ['evaluasi' => $evaluasi, 'jumlahEvaluasi' => $jumlahEvaluasi, 'user' => $user,]);
     }
 }

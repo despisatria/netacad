@@ -11,6 +11,10 @@ class EvaluasisTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('evaluasis')->insert([
+            'user_id' => '1',
+            'materi' => 'ipaddress',
+            'nilai' => '50',
+        ]); 
     }
 }
