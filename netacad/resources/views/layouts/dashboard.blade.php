@@ -8,6 +8,7 @@
     <link rel="icon" href="asset/img/favicon.png">
 
     <title>@yield('title')</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
     <link href='{{ asset("css/bootstrap.min.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/font-awesome.min.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/animate.min.css") }}' rel='stylesheet'>

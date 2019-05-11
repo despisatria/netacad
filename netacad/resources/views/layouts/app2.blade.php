@@ -8,6 +8,7 @@
     <link rel='icon' href='asset/img/favicon.png'>
 
     <title>NETACAD - Network Academy</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
     <link href='{{ asset("css/bootstrap.min.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/font-awesome.min.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/style.css") }}' rel='stylesheet'>

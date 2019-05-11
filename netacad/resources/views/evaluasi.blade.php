@@ -68,9 +68,17 @@
               <div class="row">
                 <div class="col-md-10">
                   <div class="top-card-class">
-                    <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
-                    &nbsp;&nbsp;
-                    <span> Nilai : 80</span>
+                    @if ($nilaiIpaddress != NULL)
+                      <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
+                      &nbsp;&nbsp;
+                      @if ($nilaiIpaddress->nilai > 0)
+                        <span> Nilai : {{ $nilaiIpaddress->nilai }}</span>
+                      @endif
+                    @else
+                      <i class="grey fa fa-trophy fa-2x" aria-hidden="true"></i>
+                      &nbsp;&nbsp;
+                      <span> Nilai : N/A</span>
+                    @endif
                     <h3>IP Addressing & Subnetting</h3>
                   </div>
                 </div>

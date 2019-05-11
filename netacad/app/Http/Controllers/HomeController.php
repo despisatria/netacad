@@ -62,7 +62,15 @@ class HomeController extends Controller
     }
 
     public function evaluasi() {
-        return view("evaluasi");
+        $nilaiIpaddress = Evaluasi::where([
+            ['user_id', '=', Auth::user()->id],
+            ['materi', '=', 'ipaddress'],
+        ])->get()->first();
+        if ($nilaiIpaddress == NULL) {
+            $nilaiIpaddress = 0;
+        }
+        // dd($nilaiIpaddress);
+        return view("evaluasi", ['nilaiIpaddress' => $nilaiIpaddress]);
     }
 
     public function evaluasiIpaddress() {
