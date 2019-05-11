@@ -72,4 +72,8 @@ class LoginController extends Controller
 
         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
     }
+
+    function viewLogin() {
+        return view('layouts.app2');
+    }
 }

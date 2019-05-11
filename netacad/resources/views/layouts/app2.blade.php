@@ -42,7 +42,7 @@
                         <div role='tabpanel' class='tab-pane' id='daftar'>
                             <div class='tab-card daftar-form'>
                             <h3>Daftarkan akun Anda</h3>
-                            <form action='{{ route('register') }}' class='form-signin' method='POST'>
+                            <form action="{{ route('register') }}" class='form-signin' method='POST'>
                                 @csrf
                                 <input type="hidden" name="level" value="1">
                                 <div class='form-group'>
@@ -64,9 +64,9 @@
                             </div>
                         </div>
                         <div role='tabpanel' class='tab-pane active' id='masuk'>
-                            <div class='tab-card'>
+                            <div class='tab-card login-form'>
                             <h3>Masuk dengan akun Anda</h3>
-                            <form action='{{ route('login') }}' class='form-signin' method='POST'>
+                            <form action="{{ route('login') }}" class='form-signin' method='POST'>
                                 @csrf
                                 <div class='form-group'>
                                     <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIM" required autofocus>
@@ -115,7 +115,12 @@
         document.querySelector('.daftar-form .sign-button').onclick = function(){
             swal('Terimakasih!', 'Anda dapat masuk dengan menggunakan akun tersebut.', 'success');
         };
-        </script>
+    </script>
+    @if (count($errors) > 0)
+    <script type="text/javascript">
+        swal('Login Gagal!', 'NIM atau Kata Sandi Salah!', 'error');
+    </script>
+    @endif
         <script type='text/javascript'>
         $(document).ready(function(){
             

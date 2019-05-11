@@ -79,7 +79,7 @@ class HomeController extends Controller
         
         if ($files == NULL) {
             // return view("belumBisaEvaluasi");
-            return Redirect::to('/ipaddress')->with(['success' => 'Selesaikan Materi Terlebih Dahulu!']);
+            return Redirect::to('/ipaddress')->with(['success' => 'Selesaikan Materi dan Upload File Praktik Terlebih Dahulu!']);
         } else {
             $datas = Soal::all();
             $i = 1;
