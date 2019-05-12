@@ -64,7 +64,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="{{ url('routing') }}">
+            <a href="{{ url('#') }}">
                 <div class="body-card fadeInUp animated">
                     <div class="thumb-card program4">
                         <div class="thumb-overlay4">

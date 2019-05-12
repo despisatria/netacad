@@ -38,7 +38,7 @@
 
 @section('content') 
             </div>
-            <div class="content">
+            <div class="">
               <div class="apps-msg">
                 <h1>Tentang NETACAD.</h1>
                 <div class="col-md-10 col-md-offset-1">

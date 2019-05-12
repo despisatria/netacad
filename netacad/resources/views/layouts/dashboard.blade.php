@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Join Educode and learn to code from the best online free courses programs.">
-    <link rel="icon" href="asset/img/favicon.png">
+    <link rel='icon' href='{{ asset("img/favicon.png")}}'>
 
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
@@ -40,7 +40,7 @@
             <div class="col-md-6">
               <span>
                 <ol class="breadcrumb">
-                  <li class="active">Dashboard</li>                  
+                  <li class="active">Dashboard</li>
                 </ol>
               </span>
             </div>

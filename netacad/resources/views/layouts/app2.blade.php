@@ -5,12 +5,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name='description' content='Join Educode and learn to code from the best online free courses programs.'>
-    <link rel='icon' href='asset/img/favicon.png'>
+    <link rel='icon' href='{{ asset("img/favicon.png")}}'>
 
     <title>NETACAD - Network Academy</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
     <link href='{{ asset("css/bootstrap.min.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/font-awesome.min.css") }}' rel='stylesheet'>
+    <!-- <link href='{{ asset("css/video.css") }}' rel='stylesheet'> -->
     <link href='{{ asset("css/style.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/animate.min.css") }}' rel='stylesheet'>
     <link href='{{ asset("css/sweetalert.css") }}' rel='stylesheet'>
@@ -94,6 +95,13 @@
     </div>
     <section id='home'>
     <div class='overlay'></div>
+<!--     <div class="container-fluid video-background video homepage">
+        <video poster="https://updivision.com/images/homepage/cadru_video_home.png" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+            <source src="https://updivision.com/images/homepage/homepage.ogv" type="video/ogg">
+            <source src="https://updivision.com/images/homepage/homepage.mp4" type="video/mp4">
+        </video>
+        
+    </div> -->
     <div class='header'>
         <div class='container'>
         <img src='{{asset("img/logo-netacad.png") }}'>

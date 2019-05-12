@@ -67,10 +67,10 @@
                   <a href="#materi5" aria-controls="materi" role="tab" data-toggle="tab">Kelas IP Address</a>
                 </li>
                 <li role="presentation">
-                  <a href="#materi5" aria-controls="materi" role="tab" data-toggle="tab">Subnetting</a>
+                  <a href="#materi6" aria-controls="materi" role="tab" data-toggle="tab">Subnetting</a>
                 </li>
                 <li role="presentation">
-                  <a href="#materi5" aria-controls="materi" role="tab" data-toggle="tab">VLSM</a>
+                  <a href="#materi7" aria-controls="materi" role="tab" data-toggle="tab">VLSM</a>
                 </li>
                 <span>Latihan Praktik</span>
                 <li role="presentation">
@@ -97,29 +97,65 @@
                         
                       </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="praktik1">
-                      <h1>Unggah File Latihan Praktik</h1>
-                      <span class="setting-informasi">Silahkan unggah file Cisco Packet Tracer (.pkt) yang anda buat</span><br>
-                      <form action="{{ url('upload') }}" method="post" class="form-signin" enctype="multipart/form-data">
-                          @csrf
-                          <input type="hidden" class="form-control" name='materi' value="ipaddress" id="nama">
-                          <div class="form-group">
-                            <input type="file" class="form-control" name='file' id="nama">
-                          </div>
-                          <div class="menu-card-class">
-                            <div class="row">
-                              @if ($files != NULL)
-                                <div class="col-md-6" style="text-align: left;">
-                                        <a href="{{url(Storage::url($files->lokasi))}}">{{$files->nama}}</a>
-                                </div>
-                              @endif
 
-                              <div class="col-md-6">
-                                <input type="submit" name="submit" class="btn btn-success" value="Unggah">
+                    <div role="tabpanel" class="tab-pane" id="materi4">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        
+                      </div>
+                    </div>
+                    
+                    <div role="tabpanel" class="tab-pane" id="materi5">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        
+                      </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="materi6">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        
+                      </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="materi7">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        
+                      </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="praktik1">
+                      <h2>Download Modul & Studi Kasus</h2>
+                        <span>Silahkan Download Modul dan Kerjakan Studi Kasus :</span>
+                        <form style="margin-bottom: 5px;" method="get" action="{{url(Storage::url('public/files/STUDI-KASUS.pdf'))}}">
+                          <button class="btn btn-default" type="submit">Modul Praktikum</button>
+                        </form>
+                        <form method="get" action="{{url(Storage::url('public/files/STUDI-KASUS.pdf'))}}">
+                          <button class="btn btn-default" type="submit">Studi Kasus</button>
+                        </form>
+
+                      <h2>Unggah File Latihan Praktik</h2>
+                      <span>
+                        Silahkan unggah file Cisco Packet Tracer (.pkt) yang anda buat <br> <b>(Anda hanya bisa mengunggah satu kali)</b>
+                      </span>
+                      <form action="{{ url('upload') }}" method="post" class="form-signin" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" class="form-control" name='materi' value="ipaddress" id="nama">
+                        <div class="form-group">
+                          <input type="file" class="form-control" name='file' id="nama">
+                        </div>
+                        <div class="menu-card-class">
+                          <div class="row">
+                            @if ($files != NULL)
+                              <div class="col-md-6" style="text-align: left;">
+                                <a href="{{url(Storage::url($files->lokasi))}}">{{$files->nama}}</a>
                               </div>
+                            @endif
+
+                            <div class="col-md-6">
+                              <input type="submit" name="submit" class="btn btn-success" value="Unggah">
                             </div>
                           </div>
-                        </form>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>

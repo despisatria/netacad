@@ -75,7 +75,7 @@ body {
 }
 .header {
 	text-align: center;
-	padding: 150px 0 190px;
+	padding: 160px 0 210px;
 }
 .header-tim {
 	text-align: center;
@@ -193,7 +193,7 @@ body {
     margin-bottom: 54px;
 }
 .program-card {
-	margin-bottom: 140px;
+	margin-bottom: 50px;
 	display: inline-block;
 }
 
