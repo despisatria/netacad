@@ -4,6 +4,11 @@
 NETACAD - Evaluasi Ip Address
 @endsection
 
+
+@section('breadcrum')
+    Dashboard / Evaluasi / IP Address
+@endsection
+
 @section('sideMenu')
 <div class="nav">
     <ul class="list-group">

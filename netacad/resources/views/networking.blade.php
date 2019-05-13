@@ -4,6 +4,10 @@
     NETACAD - Networking
 @endsection
 
+@section('breadcrum')
+    Dashboard / Networking
+@endsection
+
 @section('sideMenu')
 <div class="nav">
     <ul class="list-group">

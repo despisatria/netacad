@@ -26,6 +26,13 @@ class UserTableSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
+            'nim' => '1500217',
+            'name' => 'Teddy',
+            'password' => bcrypt('adminadmin'),
+            'level' => 1,
+        ]);
+
+        DB::table('users')->insert([
             'nim' => '1700916',
             'name' => 'Althea Rizqi A',
             'password' => bcrypt('1700916'),

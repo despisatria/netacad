@@ -130,7 +130,7 @@ class HomeController extends Controller
         $data->nilai = $nilai*10/2;
         $data->save();
 
-        return Redirect::to("/home");
+        return view('dashboard')->with(['alert' => 'evaluasiSelesai', 'nilai' => $nilai]);
     }
 
     public function upload(Request $request) {
@@ -150,7 +150,7 @@ class HomeController extends Controller
             'user_id' => Auth::user()->id
         ]);
 
-        return Redirect::to('/home');;
+        return view('dashboard')->with(['alert' => 'berhasilDiUpload']);
     }
 
     public function resultIpaddress() {

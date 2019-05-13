@@ -4,6 +4,10 @@
     NETACAD - Ip Address
 @endsection
 
+@section('breadcrum')
+    Dashboard / IP Address
+@endsection
+
 @section('sideMenu')
 <div class="nav">
     <ul class="list-group">

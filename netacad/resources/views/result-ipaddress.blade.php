@@ -4,6 +4,10 @@
 NETACAD - Guru 
 @endsection
 
+@section('breadcrum')
+    Dashboard / Nilai
+@endsection
+
 @section('content')    
     <div class="col-md-10">
       <div class="row">

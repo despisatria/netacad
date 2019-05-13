@@ -4,6 +4,10 @@
     NETACAD - Evaluasi
 @endsection
 
+@section('breadcrum')
+    Dashboard / Evaluasi
+@endsection
+
 @section('sideMenu')
 <div class="nav">
     <ul class="list-group">
@@ -88,7 +92,11 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
+                    @if ($nilaiIpaddress != NULL)
+                    <a href="#" class="btn btn-primary" disable>Mulai</a>
+                    @else
                     <a href="{{ url('/evaluasiIpaddress') }}" class="btn btn-success">Mulai</a>
+                    @endif
                   </div>
                 </div>
               </div>

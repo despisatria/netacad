@@ -4,6 +4,10 @@
     NETACAD - Belum Bisa Evaluasi
 @endsection
 
+@section('breadcrum')
+    Dashboard / Evaluasi
+@endsection
+
 @section('content')    
 
 </div>

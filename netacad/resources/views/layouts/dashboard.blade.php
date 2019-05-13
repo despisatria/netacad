@@ -40,7 +40,7 @@
             <div class="col-md-6">
               <span>
                 <ol class="breadcrumb">
-                  <li class="active">Dashboard</li>
+                  <li class="active">@yield('breadcrum')</li>
                 </ol>
               </span>
             </div>
