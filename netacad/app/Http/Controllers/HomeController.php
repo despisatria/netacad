@@ -115,6 +115,14 @@ class HomeController extends Controller
     }
 
     public function evaluasiIpaddressPost(Request $request) {
+        $nilaiIpaddress = Evaluasi::where([
+            ['user_id', '=', Auth::user()->id],
+            ['materi', '=', 'ipaddress'],
+        ])->get()->first();
+        if ($nilaiIpaddress == NULL) {
+            $nilaiIpaddress = 0;
+        }
+
         $nilai = 0;
         for ($i=1; $i <= 20; $i++) { 
             $no = "soal".$i;
@@ -130,7 +138,7 @@ class HomeController extends Controller
         $data->nilai = $nilai*10/2;
         $data->save();
 
-        return view('dashboard')->with(['alert' => 'evaluasiSelesai', 'nilai' => $nilai]);
+        return view('evaluasi')->with(['alert' => 'evaluasiSelesai', 'nilai' => $data->nilai, 'nilaiIpaddress' => $nilaiIpaddress]);
     }
 
     public function upload(Request $request) {
@@ -149,8 +157,11 @@ class HomeController extends Controller
             'materi' => $request->materi,
             'user_id' => Auth::user()->id
         ]);
-
-        return view('dashboard')->with(['alert' => 'berhasilDiUpload']);
+        $files = FileUpload::where("user_id", Auth::user()->id)
+                ->where("materi", "=", "ipaddress")->first();
+        
+        return view("ipaddress", ['files' => $files])->with(['alert' => 'berhasilDiUpload']);
+        // return view('ipaddress')->with(['alert' => 'berhasilDiUpload']);
     }
 
     public function resultIpaddress() {

@@ -1,11 +1,11 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    NETACAD - Ip Address
+    NETACAD - IP Addressing & Subnetting
 @endsection
 
 @section('breadcrum')
-    Dashboard / IP Address
+    <a href="{{ url('home') }}">Dashboard</a> / IP Addressing & Subnetting
 @endsection
 
 @section('sideMenu')
@@ -45,7 +45,7 @@
 </div>
 <div class="col-md-12">
   @if ($message = Session::get('success'))
-        <div class="alert alert-success alert-block text-center">
+        <div class="alert alert-info alert-block text-center">
           <button type="button" class="close" data-dismiss="alert">×</button> 
             <strong>{{ $message }}</strong>
         </div>
@@ -168,4 +168,36 @@
           </div>
         </div>
       </div>
+
+{{-- {{dd($alert)}} --}}
+@if (isset($alert) == true)
+    @if ($alert == 'berhasilDiUpload')
+    <script type="text/javascript">
+        // file sudah di upload
+
+        swal("File berhasil diunggah!", "", "success", {
+          buttons: {
+            cancel: "Lihat materi lain",
+            evaluasi: "Kerjakan Evaluasi"
+          },
+        })
+        .then((value) => {
+          switch (value) {
+            case "evaluasi":
+              window.location.href = "{{ url('evaluasi') }}";
+              break;
+
+            default :
+              window.location.href = "{{ url('home') }}";
+              break;
+          }
+        });
+
+    </script>
+    @else
+        <script type="text/javascript">
+                swal('Berhasil!', 'Nilai Anda : '+{{$nilai}}, 'success');
+        </script>
+    @endif
+@endif      
 @endsection

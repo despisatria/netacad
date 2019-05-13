@@ -15,8 +15,8 @@ NETACAD - Guru
           <div class="col-md-6">
             <span>
               <ol class="breadcrumb">
-                <li><a href="result.php">Hasil Evaluasi</a></li>
-                <li class="active">IP Addressing</li>                     
+                <li><a href="{{ url('home') }}">Hasil Evaluasi</a></li>
+                <li class="active">IP Addressing & Subnetting</li>                     
               </ol>
             </span>
           </div>

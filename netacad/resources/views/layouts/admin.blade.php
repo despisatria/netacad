@@ -34,7 +34,7 @@
                         <div class="nav">
                             <ul class="list-group">
                                 <li>
-                                    <a href="result.php" class="list-group-item active">
+                                    <a href="{{ url('home') }}" class="list-group-item active">
                                         <i class="fa fa-bar-chart fa-2x fa-fw " aria-hidden="true"></i><span> Hasil Evaluasi</span>
                                     </a>
                                 </li>

@@ -61,7 +61,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
-                    <a href="#" class="btn btn-success disabled btn-disable">Mulai</a>
+                    <a href="#" class="btn btn-success" disabled>Mulai</a>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@
                     </div>
                     <span>20 Soal</span>
                     @if ($nilaiIpaddress != NULL)
-                    <a href="#" class="btn btn-primary" disable>Mulai</a>
+                    <a href="#" class="btn btn-success" disabled>Mulai</a>
                     @else
                     <a href="{{ url('/evaluasiIpaddress') }}" class="btn btn-success">Mulai</a>
                     @endif
@@ -119,7 +119,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
-                    <a href="eval-ipaddress.php" class="btn btn-success">Mulai</a>
+                    <a href="#" class="btn btn-success">Mulai</a>
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@
                       <i class="fa fa-book active" aria-hidden="true"></i>
                     </div>
                     <span>20 Soal</span>
-                    <a href="eval-ipaddress.php" class="btn btn-success">Mulai</a>
+                    <a href="#" class="btn btn-success">Mulai</a>
                   </div>
                 </div>
               </div>
@@ -150,4 +150,26 @@
           </div>
         </div>  
       </div>  
+
+{{-- {{dd($alert)}} --}}
+@if (isset($alert) == true)
+    @if ($alert == 'evaluasiSelesai')
+      <script type="text/javascript">
+
+        swal('Nilai Anda : '+{{$nilai}}, "", 'success', {
+          buttons: {
+            ok: "OK"
+          },
+        })
+        .then((value) => {
+          switch (value) {
+
+            default :
+               window.location.href = "{{ url('evaluasi') }}";
+              break;
+          }
+        });
+      </script>
+    @endif
+@endif   
 @endsection

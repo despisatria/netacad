@@ -1,11 +1,11 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    NETACAD - Networking
+    NETACAD - Basic Networking
 @endsection
 
 @section('breadcrum')
-    Dashboard / Networking
+   <a href="{{ url('home') }}">Dashboard</a> / Basic Networking
 @endsection
 
 @section('sideMenu')
