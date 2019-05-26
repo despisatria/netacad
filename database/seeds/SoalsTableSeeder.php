@@ -124,12 +124,12 @@ class SoalsTableSeeder extends Seeder
         ]);
 
          DB::table('soals')->insert([
-            'soal' => 'Diketahui sebuah IP address adalah 192.168.77.4. Jika IP address tersebut diubah kedalam bentuk biner, maka jawaban yang benar adalah ....',
-            'opsiA' => '10000000.10100000.01001101.11010010',
-            'opsiB' => '10000000.00100000.01001001.11010000',
-            'opsiC' => '11000000.10010010.01001101.11010010',
-            'opsiD' => '11000000.10101000.01001101.00000100',
-            'opsiE' => '11000000.00100010.00010100.00000100',
+            'soal' => 'Dalam pengalamatan IP, IP Address yang diidentifikasikan untuk menunjukan alamat jaringan atau identitas jaringan disebut ....',
+            'opsiA' => 'Netmask',
+            'opsiB' => 'Route ID',
+            'opsiC' => 'Host ID',
+            'opsiD' => 'Network ID',
+            'opsiE' => 'Broadcast',
             'a' => 0,
             'b' => 0,
             'c' => 0,
@@ -138,12 +138,12 @@ class SoalsTableSeeder extends Seeder
         ]);
 
          DB::table('soals')->insert([
-            'soal' => 'Diketahui sebuah IP address adalah 112.50.20.4. Jika IP address tersebut diubah kedalam bentuk biner, maka jawaban yang benar adalah ....',
-            'opsiA' => '01110000.00110010.00010100.00000100',
-            'opsiB' => '10000010.00100010.00010100.00000100',
-            'opsiC' => '11000010.00110010.00010100.00000100',
-            'opsiD' => '11000010.00100010.00010100.00000100',
-            'opsiE' => '11000010.00110010.00010101.00000100',
+            'soal' => 'Jika terdapat IP address dengan prefix /29. Maka IP Address valid yang dapat digunakan adalah sebanyak .... ',
+            'opsiA' => '6 host',
+            'opsiB' => '8 host',
+            'opsiC' => '14 host',
+            'opsiD' => '16 host',
+            'opsiE' => '32 host',
             'a' => 1,
             'b' => 0,
             'c' => 0,

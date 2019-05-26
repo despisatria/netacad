@@ -128,13 +128,10 @@
 
                     <div role="tabpanel" class="tab-pane" id="praktik1">
                       <h2>Download Modul & Studi Kasus</h2>
-                        <span>Silahkan Download Modul dan Kerjakan Studi Kasus :</span>
-                        <form style="margin-bottom: 5px;" method="get" action="{{url(Storage::url('public/files/STUDI-KASUS.pdf'))}}">
-                          <button class="btn btn-default" type="submit">Modul Praktikum</button>
-                        </form>
-                        <form method="get" action="{{url(Storage::url('public/files/STUDI-KASUS.pdf'))}}">
-                          <button class="btn btn-default" type="submit">Studi Kasus</button>
-                        </form>
+                        <span>Silahkan Download Modul dan Kerjakan Studi Kasus :</span><br>
+                          <a href="{{url(Storage::url('public/files/MODUL-PRAKTIKUM.pdf'))}}" class="btn btn-default" type="submit">Modul Praktikum</a>
+                          <a href="{{url(Storage::url('public/files/STUDI-KASUS.pdf'))}}" class="btn btn-default" type="submit">Studi Kasus</a>
+                        
 
                       <h2>Unggah File Latihan Praktik</h2>
                       <span>

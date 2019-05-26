@@ -41,57 +41,60 @@
                            <!-- Tab panes -->
                            <div class='tab-content'>
                               <div role='tabpanel' class='tab-pane' id='daftar'>
-                                 <div class='tab-card daftar-form'>
+                                <div class='tab-card daftar-form'>
                                    <h3>Daftarkan akun Anda</h3>
                                    <form action="{{ route('register') }}" class='form-signin' method='POST'>
                                      @csrf
-                                     <input type="hidden" name="level" value="1">
-                                     <div class='form-group'>
+                                    <input type="hidden" name="level" value="1">
+                                    <div class='form-group'>
                                        <input type='text' class='form-control' id='nama' name='name' placeholder='Nama Lengkap' required="">
                                     </div>
                                     <div class='form-group'>
                                        <input type='text' class='form-control' id='nim' name='nim' placeholder='NIM' required="">
-                                    </div>
-                                 </div>
-                                 <div class="form-group">
-                                    <div class="input-group" id="show_hide_password">
-                                       <input class="form-control" type="password" id='password' name='password' placeholder='Kata Sandi' required="">
-                                       <div class="input-group-addon">
-                                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
-                                     </div>
-                                  </div>
-                               </div>
-                               <div class='form-group'>
-                                  <input type="hidden" name="level">
-                               </div>
-                               <button type='submit' class='btn btn-success sign-button'>Daftar</button>
-                            </form>
-                         </div>
-                      </div>
-                      <div role='tabpanel' class='tab-pane active' id='masuk'>
-                       <div class='tab-card login-form'>
-                          <h3>Masuk dengan akun Anda</h3>
-                          <form action="{{ route('login') }}" class='form-signin' method='POST'>
-                            @csrf
-                            <div class='form-group'>
-                              <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIM" required autofocus>
-                           </div>
-                           <div class='form-group'>
+                                    </div><!-- 
+                                <div class='form-group'>
+                                <input type='email' class='form-control' id='password' name='email' placeholder='Email'>
+                                <input type="hidden" name="level">
+                             </div> -->
+                             <div class="form-group">
                               <div class="input-group" id="show_hide_password">
-                               <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" type="password" id='password' name='password' placeholder='Kata Sandi' required>
+                               <input class="form-control" type="password" id='password' name='password' placeholder='Kata Sandi' required="">
                                <div class="input-group-addon">
                                 <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                              </div>
                           </div>
                        </div>
-                       <button type='submit' class='btn btn-success sign-button'>Masuk</button>
-                    </form>
+                       <div class='form-group'>
+                         <input type="hidden" name="level">
+                      </div>
+                      <button type='submit' class='btn btn-success sign-button'>Daftar</button>
+                   </form>
+                </div>
+             </div>
+             <div role='tabpanel' class='tab-pane active' id='masuk'>
+              <div class='tab-card login-form'>
+                 <h3>Masuk dengan akun Anda</h3>
+                 <form action="{{ route('login') }}" class='form-signin' method='POST'>
+                   @csrf
+                   <div class='form-group'>
+                     <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIM" required autofocus>
+                  </div>
+                  <div class='form-group'>
+                     <div class="input-group" id="show_hide_password">
+                      <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" type="password" id='password' name='password' placeholder='Kata Sandi' required>
+                      <div class="input-group-addon">
+                       <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </div>
                  </div>
               </div>
-           </div>
+              <button type='submit' class='btn btn-success sign-button'>Masuk</button>
+           </form>
         </div>
      </div>
   </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
