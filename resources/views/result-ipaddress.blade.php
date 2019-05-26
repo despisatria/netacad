@@ -34,6 +34,7 @@ NETACAD - Guru
                   <th>NIM</th>
                   <th>Nama</th>
                   <th>Nilai</th>
+                  <th>File Praktik</th>
                 </tr>
               </thead>
               <tbody>
@@ -44,10 +45,11 @@ NETACAD - Guru
                     <td>{{ $item->user->nim }}</td>
                     <td>{{ $item->user->name }}</td>
                     <td>{{ $item['nilai'] }}</td>
+                    <td>Disini file yg diupload</td>
                   </tr>
                   @endforeach
                 @else
-                    <td colspan="3">Data Empty</td>
+                    <td class="text-center" colspan="4">Data Empty</td>
                 @endif
               </tbody>
               <!-- <tfoot>

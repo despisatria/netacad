@@ -62,10 +62,10 @@
                   <a href="#materi2" aria-controls="materi" role="tab" data-toggle="tab">Jenis IP Address</a>
                 </li>
                 <li role="presentation">
-                  <a href="#materi3" aria-controls="materi" role="tab" data-toggle="tab">Network ID dan Host ID</a>
+                  <a href="#materi3" aria-controls="materi" role="tab" data-toggle="tab">NetID dan HostID</a>
                 </li>
                 <li role="presentation">
-                  <a href="#materi4" aria-controls="materi" role="tab" data-toggle="tab">Prefix dan Subnetmask</a>
+                  <a href="#materi4" aria-controls="materi" role="tab" data-toggle="tab">Prefix dan Netmask</a>
                 </li>
                 <li role="presentation">
                   <a href="#materi5" aria-controls="materi" role="tab" data-toggle="tab">Kelas IP Address</a>
