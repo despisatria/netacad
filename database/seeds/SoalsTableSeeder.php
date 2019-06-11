@@ -236,7 +236,7 @@ class SoalsTableSeeder extends Seeder
         ]);
 
          DB::table('soals')->insert([
-            'soal' => 'Sebuah perusahaan memiliki IP address dan ingin membaginya sesuai jumlah divisi yang ada, yaitu 6 divisi, dimana tiap divisi masing-masing memiliki host sebanyak : Divisi A : 3 host <br> Divisi B : 8 host <br> Divisi C : 17 host <br> Divisi D : 5 host <br> Divisi E : 10 host <br> Divisi F : 10 host <br> Maka pembagian yang mungkin dilakukan dengan teknik ....',
+            'soal' => 'Sebuah perusahaan memiliki IP address dan ingin membaginya sesuai jumlah divisi yang ada, yaitu 6 divisi, dimana tiap divisi masing-masing memiliki host sebanyak :<br> Divisi A : 3 host <br> Divisi B : 8 host <br> Divisi C : 17 host <br> Divisi D : 5 host <br> Divisi E : 10 host <br> Divisi F : 10 host <br> Maka pembagian yang mungkin dilakukan dengan teknik ....',
             'opsiA' => 'Network Address Translation',
             'opsiB' => 'Subnetting Classfull',
             'opsiC' => 'Variable Length Subnet Mask',
