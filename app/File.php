@@ -11,4 +11,8 @@ class File extends Model
         'lokasi',
         'user_id'
     ];
+
+    public function user() {
+        return $this->belongsTo('App\User');
+    }
 }

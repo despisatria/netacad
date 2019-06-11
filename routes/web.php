@@ -18,6 +18,7 @@ Auth::routes();
 Route::get('/tentang', function() {
     return view('about');
 });
+
 Route::get('/home', 'HomeController@index');
 Route::get('/networking', 'HomeController@networking');
 Route::get('/ipaddress', 'HomeController@ipaddress');

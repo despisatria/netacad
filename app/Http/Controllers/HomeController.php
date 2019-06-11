@@ -172,7 +172,7 @@ class HomeController extends Controller
         //     ->with('evaluasis') // bring along details of the friend
         //     ->join('users', 'users.user_id', '=', 'evaluasis.user_id')
         //     ->get(['users.*']);
-        // dd($evaluasi[0]->user);
-        return view('result-ipaddress', ['evaluasi' => $evaluasi, 'jumlahEvaluasi' => $jumlahEvaluasi, 'user' => $user,]);
+        // dd($evaluasi[0]->user->file[0]->nama);
+        return view('result-ipaddress', ['evaluasi' => $evaluasi, 'jumlahEvaluasi' => $jumlahEvaluasi, 'user' => $user]);
     }
 }

@@ -45,7 +45,7 @@ NETACAD - Guru
                     <td>{{ $item->user->nim }}</td>
                     <td>{{ $item->user->name }}</td>
                     <td>{{ $item['nilai'] }}</td>
-                    <td>Disini file yg diupload</td>
+                    <td><a href="{{url(Storage::url($item->user->file[0]->lokasi))}}">{{ $item->user->file[0]->nama }}</a></td>
                   </tr>
                   @endforeach
                 @else

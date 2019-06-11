@@ -1,0 +1,1024 @@
+[2019-05-02 15:19:29] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations) at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(20): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(556): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2019-05-02 15:21:37] local.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations) at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(20): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(556): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2019-05-02 15:23:19] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `us...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `us...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2014_10_12_000000_create_users_table.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateUsersTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-05-02 15:31:02] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `email_verified_at` timestamp null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `email_verified_at` timestamp null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('create table `u...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('create table `u...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `u...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2014_10_12_000000_create_users_table.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateUsersTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-05-02 15:31:13] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `email_verified_at` timestamp null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `email_verified_at` timestamp null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('create table `u...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('create table `u...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `u...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2014_10_12_000000_create_users_table.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateUsersTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(60): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#29 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2019-05-02 15:40:09] local.ERROR: There are no commands defined in the "mskr" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"mskr\" namespace. at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php:585)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('mskr')
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(233): Symfony\\Component\\Console\\Application->find('mskr:migration')
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-05-02 16:24:49] local.ERROR: Method Illuminate\Database\Schema\Blueprint::bigIncrement does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::bigIncrement does not exist. at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Macroable.php:102)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2019_05_02_154138_create_files_table.php(18): Illuminate\\Database\\Schema\\Blueprint->__call('bigIncrement', Array)
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(165): CreateFilesTable->{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1123): Illuminate\\Database\\Schema\\Builder->Illuminate\\Database\\Schema\\{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('files', Object(Closure))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2019_05_02_154138_create_files_table.php(26): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateFilesTable->up()
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateFilesTable), 'up')
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#12 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(60): Illuminate\\Console\\Command->call('migrate', Array)
+#22 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#23 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#28 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2019-05-02 16:25:14] local.ERROR: SQLSTATE[HY000]: General error: 1005 Can't create table `netacad_db`.`#sql-1280_2f` (errno: 150 "Foreign key constraint is incorrectly formed") (SQL: alter table `files` add constraint `files_user_id_foreign` foreign key (`user_id`) references `users` (`id`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1005 Can't create table `netacad_db`.`#sql-1280_2f` (errno: 150 \"Foreign key constraint is incorrectly formed\") (SQL: alter table `files` add constraint `files_user_id_foreign` foreign key (`user_id`) references `users` (`id`)) at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1005 Can't create table `netacad_db`.`#sql-1280_2f` (errno: 150 \"Foreign key constraint is incorrectly formed\") at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `fi...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `fi...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `fi...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('files', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2019_05_02_154138_create_files_table.php(26): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateFilesTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateFilesTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(60): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#29 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2019-05-02 16:25:56] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'files' already exists (SQL: create table `files` (`id` bigint unsigned not null auto_increment primary key, `user_id` bigint not null, `nama` varchar(255) not null, `lokasi` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'files' already exists (SQL: create table `files` (`id` bigint unsigned not null auto_increment primary key, `user_id` bigint not null, `nama` varchar(255) not null, `lokasi` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'files' already exists at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('create table `f...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('create table `f...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `f...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('files', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2019_05_02_154138_create_files_table.php(26): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateFilesTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateFilesTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(60): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#29 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2019-05-02 16:26:34] local.ERROR: SQLSTATE[HY000]: General error: 1005 Can't create table `netacad_db`.`#sql-1280_4b` (errno: 150 "Foreign key constraint is incorrectly formed") (SQL: alter table `files` add constraint `files_user_id_foreign` foreign key (`user_id`) references `users` (`id`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1005 Can't create table `netacad_db`.`#sql-1280_4b` (errno: 150 \"Foreign key constraint is incorrectly formed\") (SQL: alter table `files` add constraint `files_user_id_foreign` foreign key (`user_id`) references `users` (`id`)) at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1005 Can't create table `netacad_db`.`#sql-1280_4b` (errno: 150 \"Foreign key constraint is incorrectly formed\") at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `fi...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `fi...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `fi...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('files', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2019_05_02_154138_create_files_table.php(26): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateFilesTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateFilesTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(60): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#29 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2019-05-02 16:27:53] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'files' already exists (SQL: create table `files` (`id` bigint unsigned not null auto_increment primary key, `user_id` bigint unsigned not null, `nama` varchar(255) not null, `lokasi` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'files' already exists (SQL: create table `files` (`id` bigint unsigned not null auto_increment primary key, `user_id` bigint unsigned not null, `nama` varchar(255) not null, `lokasi` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'files' already exists at C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('create table `f...', Array, Object(Closure))
+#1 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('create table `f...', Array, Object(Closure))
+#2 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `f...')
+#3 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(265): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(166): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('files', Object(Closure))
+#6 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\database\\migrations\\2019_05_02_154138_create_files_table.php(26): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(360): CreateFilesTable->up()
+#8 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(367): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(178): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateFilesTable), 'up')
+#10 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(147): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Teddy\\\\...', 1, false)
+#11 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(96): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(198): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(60): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#24 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#25 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#29 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Teddy\\Documents\\Code\
+etacad\
+etacad\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
