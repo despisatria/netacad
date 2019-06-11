@@ -18,11 +18,11 @@ class EvaluasisTableSeeder extends Seeder
             'nilai' => 75,
         ]);
 
-        // DB::table('evaluasis')->insert([
-        //     'user_id' => 3,
-        //     'materi' => 'ipaddress',
-        //     'nilai' => 80,
-        // ]);
+        DB::table('evaluasis')->insert([
+            'user_id' => 3,
+            'materi' => 'ipaddress',
+            'nilai' => 80,
+        ]);
 
         // DB::table('evaluasis')->insert([
         //     'user_id' => 4,

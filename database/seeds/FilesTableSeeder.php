@@ -17,5 +17,12 @@ class FilesTableSeeder extends Seeder
             'lokasi' => 'public/files/materi.pdf',
             'materi' => 'ipaddress',
         ]);
+
+        DB::table('files')->insert([
+            'user_id' => '3',
+            'nama' => 'test.pdf',
+            'lokasi' => 'public/files/test.pdf',
+            'materi' => 'ipaddress',
+        ]);
     }
 }
