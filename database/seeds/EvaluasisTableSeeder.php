@@ -12,17 +12,11 @@ class EvaluasisTableSeeder extends Seeder
     public function run()
     {
 
-        DB::table('evaluasis')->insert([
-            'user_id' => 2,
-            'materi' => 'ipaddress',
-            'nilai' => 75,
-        ]);
-
-        DB::table('evaluasis')->insert([
-            'user_id' => 3,
-            'materi' => 'ipaddress',
-            'nilai' => 80,
-        ]);
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 3,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 80,
+        // ]);
 
         // DB::table('evaluasis')->insert([
         //     'user_id' => 4,
@@ -39,7 +33,7 @@ class EvaluasisTableSeeder extends Seeder
         // DB::table('evaluasis')->insert([
         //     'user_id' => 6,
         //     'materi' => 'ipaddress',
-        //     'nilai' => 100,
+        //     'nilai' => 55,
         // ]);
 
         // DB::table('evaluasis')->insert([
@@ -62,6 +56,54 @@ class EvaluasisTableSeeder extends Seeder
 
         // DB::table('evaluasis')->insert([
         //     'user_id' => 10,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 85,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 11,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 95,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 12,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 100,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 13,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 95,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 14,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 70,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 15,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 50,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 16,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 65,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 17,
+        //     'materi' => 'ipaddress',
+        //     'nilai' => 75,
+        // ]);
+
+        // DB::table('evaluasis')->insert([
+        //     'user_id' => 18,
         //     'materi' => 'ipaddress',
         //     'nilai' => 85,
         // ]);

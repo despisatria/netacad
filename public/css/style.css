@@ -636,9 +636,13 @@ span.setting-informasi,img.setting-informasi {
 	border:0;
 	padding: 10px;
 	min-width: 150px;
+
 }
 .nav-program {
 	border-bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 490px;
 }
 .nav-program li.active a,.nav-program li.active a:focus,.nav-program li.active:hover a {
 	border: 0;
@@ -781,3 +785,28 @@ span.setting-informasi,img.setting-informasi {
    cursor: pointer;
    pointer-events: all;
  }
+
+ .fill {
+  position: relative;
+  height: 19px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.empty {
+  display: inline-block;
+  height: 25px;
+  width: 205px;
+  border: solid 3px salmon;
+  background: white;
+  margin-bottom: : 10px;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}

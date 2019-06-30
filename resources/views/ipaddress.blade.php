@@ -53,34 +53,57 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-2 program-list">
-              <span>Pematerian</span>
-              <ul class="nav nav-tabs nav-program" role="tablist">
-                <li role="presentation" class="active">
-                  <a href="#materi" aria-controls="materi" role="tab" data-toggle="tab">Apa itu IP Address ?</a>
-                </li>
-                <li role="presentation">
-                  <a href="#materi2" aria-controls="materi" role="tab" data-toggle="tab">Jenis IP Address</a>
-                </li>
-                <li role="presentation">
-                  <a href="#materi3" aria-controls="materi" role="tab" data-toggle="tab">NetID dan HostID</a>
-                </li>
-                <li role="presentation">
-                  <a href="#materi4" aria-controls="materi" role="tab" data-toggle="tab">Prefix dan Netmask</a>
-                </li>
-                <li role="presentation">
-                  <a href="#materi5" aria-controls="materi" role="tab" data-toggle="tab">Kelas IP Address</a>
-                </li>
-                <li role="presentation">
-                  <a href="#materi6" aria-controls="materi" role="tab" data-toggle="tab">Subnetting</a>
-                </li>
-                <li role="presentation">
-                  <a href="#materi7" aria-controls="materi" role="tab" data-toggle="tab">VLSM</a>
-                </li>
-                <span>Latihan Praktik</span>
-                <li role="presentation">
-                  <a href="#praktik1" aria-controls="praktik" role="tab" data-toggle="tab">Latihan1</a>
-                </li>
-              </ul>
+              <div class="row">
+                <span>Pematerian</span>
+                <ul class="nav nav-tabs nav-program" role="tablist">
+                  <li role="presentation" class="active">
+                    <a href="#materi" aria-controls="materi" role="tab" data-toggle="tab">Apa itu IP Address ?</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 1</li></ul></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#materi2" aria-controls="materi" role="tab" data-toggle="tab">Jenis IP Address</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis2" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 2</li></ul></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#materi3" aria-controls="materi" role="tab" data-toggle="tab">NetID dan HostID</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis3" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 3</li></ul></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#materi4" aria-controls="materi" role="tab" data-toggle="tab">Prefix dan Netmask</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis4" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 4</li></ul></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#materi5" aria-controls="materi" role="tab" data-toggle="tab">Kelas IP Address</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis5" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 5</li></ul></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#materi6" aria-controls="materi" role="tab" data-toggle="tab">Subnetting</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis6" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 6</li></ul></a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#materi7" aria-controls="materi" role="tab" data-toggle="tab">VLSM</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kuis7" aria-controls="kuis" role="tab" data-toggle="tab"><ul style="padding-left: 15px;" type="none"><li>Kuis 7</li></ul></a>
+                  </li>
+                  <span>Latihan Praktik</span>
+                  <li role="presentation">
+                    <a href="#praktik1" aria-controls="praktik" role="tab" data-toggle="tab">Latihan1</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="col-md-10">
               <div class="body-card-setting">
@@ -88,44 +111,84 @@
                   <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="materi">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <!-- <iframe src="asset/video/program1.mp4" frameborder="0" allowfullscreen autoplay></iframe> -->
+                        <video width="100%" height="100%" controls>
+                          <source src="{{url(Storage::url('public/files/1.mp4'))}}" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="kuis">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-1.swf'))}}"></object>
                       </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="materi2">
                       <div class="embed-responsive embed-responsive-16by9">
-                        
+                        <video controls>
+                          <source src="{{url(Storage::url('public/files/2.mp4'))}}" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="kuis2">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-2.swf'))}}"></object>
                       </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="materi3">
                       <div class="embed-responsive embed-responsive-16by9">
-                        
+                        <video controls>
+                          <source src="{{url(Storage::url('public/files/3.mp4'))}}" type="video/mp4">
+                        </video>
                       </div>
                     </div>
-
+                    <div role="tabpanel" class="tab-pane" id="kuis3">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-3.swf'))}}"></object>
+                      </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="materi4">
                       <div class="embed-responsive embed-responsive-16by9">
                         
                       </div>
                     </div>
-                    
+                    <div role="tabpanel" class="tab-pane" id="kuis4">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-4.swf'))}}"></object>
+                      </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="materi5">
                       <div class="embed-responsive embed-responsive-16by9">
                         
                       </div>
                     </div>
-
+                    <div role="tabpanel" class="tab-pane" id="kuis5">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-5.swf'))}}"></object>
+                      </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="materi6">
                       <div class="embed-responsive embed-responsive-16by9">
-                        
+                        <video controls>
+                          <source src="{{url(Storage::url('public/files/6.mp4'))}}" type="video/mp4">
+                        </video>
                       </div>
                     </div>
-
+                    <div role="tabpanel" class="tab-pane" id="kuis6">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-6.swf'))}}"></object>
+                      </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="materi7">
                       <div class="embed-responsive embed-responsive-16by9">
-                        
+                        <video controls>
+                          <source src="{{url(Storage::url('public/files/7.mp4'))}}" type="video/mp4">
+                        </video>
                       </div>
                     </div>
-
+                    <div role="tabpanel" class="tab-pane" id="kuis7">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <object width="100%" height="100%" data="{{url(Storage::url('public/files/kuis-7.swf'))}}"></object>
+                      </div>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="praktik1">
                       <h2>Download Modul & Studi Kasus</h2>
                         <span>Silahkan Download Modul dan Kerjakan Studi Kasus :</span><br>
@@ -167,6 +230,52 @@
       </div>
 
 {{-- {{dd($alert)}} --}}
+<script type="text/javascript">
+  const fill = document.querySelector('.fill');
+const empties = document.querySelectorAll('.empty');
+
+// Fill listeners
+fill.addEventListener('dragstart', dragStart);
+fill.addEventListener('dragend', dragEnd);
+
+// Loop through empty boxes and add listeners
+for (const empty of empties) {
+  empty.addEventListener('dragover', dragOver);
+  empty.addEventListener('dragenter', dragEnter);
+  empty.addEventListener('dragleave', dragLeave);
+  empty.addEventListener('drop', dragDrop);
+}
+
+// Drag Functions
+
+function dragStart() {
+  this.className += ' hold';
+  setTimeout(() => (this.className = 'invisible'), 0);
+}
+
+function dragEnd() {
+  this.className = 'fill';
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
+
+function dragEnter(e) {
+  e.preventDefault();
+  this.className += ' hovered';
+}
+
+function dragLeave() {
+  this.className = 'empty';
+}
+
+function dragDrop() {
+  this.className = 'empty';
+  this.append(fill);
+}
+
+</script>
 @if (isset($alert) == true)
     @if ($alert == 'berhasilDiUpload')
     <script type="text/javascript">
