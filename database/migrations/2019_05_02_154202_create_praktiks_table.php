@@ -20,6 +20,10 @@ class CreatePraktiksTable extends Migration
             $table->integer('status');
             $table->timestamps();
 
+            $table->foreign('user_id')
+                ->references('id')->on('users'); 
+            $table->foreign('file_id')
+                ->references('id')->on('files'); 
             // $table->foreign('user_id')
             //     ->references('id')->on('users'); 
             // $table->foreign('file_id')

@@ -19,6 +19,12 @@
     <script src='{{ asset("js/bootstrap.min.js") }}'></script>
     <script src='{{ asset("js/waypoint.min.js") }}'></script>
     <script src='{{ asset("js/sweetalert.min.js") }}'></script>
+    <style type="text/css">
+      .tujuan>li>a {
+        padding: 15px 25px;
+        margin: 0;
+      }
+    </style>
   </head>
 
   <body>

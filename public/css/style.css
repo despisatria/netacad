@@ -345,7 +345,7 @@ body {
     position: relative;
 }
 .card-apps {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 .apps-curve {
     position: absolute;
@@ -377,7 +377,7 @@ body {
 	margin-bottom: 20px;
 }
 .card-1st {
-	margin-top: 54px;
+	margin-top: 40px;
 }
 .apps-msg h2 {
 	font-size: 26px;
@@ -642,8 +642,9 @@ span.setting-informasi,img.setting-informasi {
 	border-bottom: 0;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	height: 490px;
+	height: 515px;
 }
+
 .nav-program li.active a,.nav-program li.active a:focus,.nav-program li.active:hover a {
 	border: 0;
 }
@@ -651,6 +652,7 @@ span.setting-informasi,img.setting-informasi {
 	background: #3498db;
 	color: #fff;
 }
+
 .program-list span {
 	display: inline-block;
 	padding: 10px 20px;
@@ -809,4 +811,10 @@ span.setting-informasi,img.setting-informasi {
 .hovered {
   background: #f4f4f4;
   border-style: dashed;
+}
+
+.ki{
+	margin-left: 15px; 
+	margin-right: 15px; 
+	text-align: justify;
 }

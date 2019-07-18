@@ -40,21 +40,39 @@
 </div>
 @endsection
 
-@section('content')    
+
+
+@section('content') 
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+    $('#myModal').on('hide.bs.modal', function(e) {    
+      var $if = $(e.delegateTarget).find('iframe');
+      var src = $if.attr("src");
+      $if.attr("src", '/empty.html');
+      $if.attr("src", src);
+    });
+</script>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Nonton dulu Video ini yuk!</h4>
+            </div>
+            <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iyRriud0pD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="col-md-10 col-md-offset-1">
     <div class="program-card">
-        <div class="col-md-6">
-            <a href="{{ url('networking') }}">
-                <div class="body-card fadeInUp animated">
-                    <div class="thumb-card program1">
-                        <div class="thumb-overlay1"></div>
-                    </div>
-                    <div class="title-card">
-                        <span class="lg-title">Basic Networking</span>
-                    </div>
-                </div>
-            </a>
-        </div>
         <div class="col-md-6">
             <a href="{{ url('ipaddress') }}">
                 <div class="body-card fadeInUp animated">
@@ -62,7 +80,19 @@
                         <div class="thumb-overlay2"></div>
                     </div>
                     <div class="title-card">
-                        <span class="lg-title">IP Addressing & Subnetting</span>
+                        <span class="lg-title">Pengalamatan IP Address</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="{{ url('#') }}">
+                <div class="body-card fadeInUp animated">
+                    <div class="thumb-card program1">
+                        <div class="thumb-overlay1"></div>
+                    </div>
+                    <div class="title-card">
+                        <span class="lg-title">Comingsoon</span>
                     </div>
                 </div>
             </a>
@@ -75,7 +105,7 @@
             </div>
         </div>
         <div class="title-card">
-            <span class="lg-title">Network Routing</span>
+            <span class="lg-title">Comingsoon</span>
         </div>
     </div>
 </a>
@@ -88,7 +118,7 @@
                     </div>
                 </div>
         <div class="title-card">
-            <span class="lg-title">Virtual Local Area Network</span>
+            <span class="lg-title">Comingsoon</span>
         </div>
     </div>
 </a>

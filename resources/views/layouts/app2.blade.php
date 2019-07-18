@@ -50,7 +50,7 @@
                                        <input type='text' class='form-control' id='nama' name='name' placeholder='Nama Lengkap' required="">
                                     </div>
                                     <div class='form-group'>
-                                       <input type='text' class='form-control' id='nim' name='nim' placeholder='NIM' required="">
+                                       <input type='text' class='form-control' id='nim' name='nim' placeholder='NIS' required="">
                                     </div><!-- 
                                 <div class='form-group'>
                                 <input type='email' class='form-control' id='password' name='email' placeholder='Email'>
@@ -77,7 +77,7 @@
                  <form action="{{ route('login') }}" class='form-signin' method='POST'>
                    @csrf
                    <div class='form-group'>
-                     <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIM" required autofocus>
+                     <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="nim" value="{{ old('email') }}" placeholder="NIS" required autofocus>
                   </div>
                   <div class='form-group'>
                      <div class="input-group" id="show_hide_password">

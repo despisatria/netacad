@@ -21,6 +21,8 @@ class CreateFilesTable extends Migration
             $table->string('materi', 255)->nullable();
             $table->timestamps(); 
             
+            $table->foreign('user_id')
+                ->references('id')->on('users'); 
             // $table->foreign('user_id')
             //     ->references('id')->on('users');        
     

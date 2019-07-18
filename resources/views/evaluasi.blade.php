@@ -50,29 +50,6 @@
               <div class="row">
                 <div class="col-md-10">
                   <div class="top-card-class">
-                    <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
-                    &nbsp;&nbsp;
-                    <span> Nilai : 80</span>
-                    <h3>Basic Networking</h3>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="menu-card-catalog">
-                    <div class="bar-skill">
-                      <i class="fa fa-book active" aria-hidden="true"></i>
-                    </div>
-                    <span>20 Soal</span>
-                    <a href="#" class="btn btn-success" disabled>Mulai</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="body-card-class fadeInUp animated bg-card">
-              <div class="row">
-                <div class="col-md-10">
-                  <div class="top-card-class">
                     @if ($nilaiIpaddress != NULL)
                       <i class="gold fa fa-trophy fa-2x" aria-hidden="true"></i>
                       &nbsp;&nbsp;
@@ -84,7 +61,7 @@
                       &nbsp;&nbsp;
                       <span> Nilai : N/A</span>
                     @endif
-                    <h3>IP Addressing & Subnetting</h3>
+                    <h3>Pengalamatan IP Address</h3>
                   </div>
                 </div>
                 <div class="col-md-2">
@@ -111,7 +88,7 @@
                     <i class="grey fa fa-trophy fa-2x" aria-hidden="true"></i>
                     &nbsp;&nbsp;
                     <span> Nilai : N/A</span>
-                    <h3>Network Routing</h3>
+                    <h3>Comingsoon</h3>
                   </div>
                 </div>
                 <div class="col-md-2">
@@ -134,7 +111,30 @@
                     <i class="grey fa fa-trophy fa-2x" aria-hidden="true"></i>
                     &nbsp;&nbsp;
                     <span> Nilai : N/A</span>
-                    <h3>Virtual Local Area Network</h3>
+                    <h3>Comingsoon</h3>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="menu-card-catalog">
+                    <div class="bar-skill">
+                      <i class="fa fa-book active" aria-hidden="true"></i>
+                    </div>
+                    <span>20 Soal</span>
+                    <a href="#" class="btn btn-success">Mulai</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="body-card-class fadeInUp animated bg-card">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="top-card-class">
+                    <i class="grey fa fa-trophy fa-2x" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
+                    <span> Nilai : N/A</span>
+                    <h3>Comingsoon</h3>
                   </div>
                 </div>
                 <div class="col-md-2">
