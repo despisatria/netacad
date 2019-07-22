@@ -25,243 +25,250 @@ class UserTableSeeder extends Seeder
             'level' => 1,
         ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1700916',
-        //     'name' => 'Althea Rizqi A',
-        //     'password' => bcrypt('1700916'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180595',
+            'name' => 'AGUNG MAULANA FATHAN',
+            'password' => bcrypt('10180595'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1705008',
-        //     'name' => 'Andita Khairunnisa',
-        //     'password' => bcrypt('1705008'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180596',
+            'name' => 'ANNISA AMALIYAH RIZKIYANI',
+            'password' => bcrypt('10180596'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1703861',
-        //     'name' => 'Ani Mulyani',
-        //     'password' => bcrypt('1703861'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180597',
+            'name' => 'ANTA KHAERUN NUZULAN',
+            'password' => bcrypt('10180597'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701499',
-        //     'name' => 'Annisa F',
-        //     'password' => bcrypt('1701499'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180598',
+            'name' => 'ARIS MUNANDAR',
+            'password' => bcrypt('10180598'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1700701',
-        //     'name' => 'Bisma Pandara S',
-        //     'password' => bcrypt('1700701'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180599',
+            'name' => 'AUDITRA ALDIFASYA',
+            'password' => bcrypt('10180599'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1705408',
-        //     'name' => 'Bobby M Ilham',
-        //     'password' => bcrypt('1705408'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180600',
+            'name' => 'AZIZ MUHAMMAD LABIB',
+            'password' => bcrypt('10180600'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1703734',
-        //     'name' => 'Dela Adelia',
-        //     'password' => bcrypt('1703734'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180601',
+            'name' => 'DENDI SEPTRIAWAN',
+            'password' => bcrypt('10180601'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1704734',
-        //     'name' => 'Dena Meilani',
-        //     'password' => bcrypt('1704734'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180602',
+            'name' => 'DESTYA FITRIANI',
+            'password' => bcrypt('10180602'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1703571',
-        //     'name' => 'Dina Dwi H',
-        //     'password' => bcrypt('1703571'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180603',
+            'name' => 'DINA KUSNAENI',
+            'password' => bcrypt('10180603'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702329',
-        //     'name' => 'Fachrul Rusmayadil',
-        //     'password' => bcrypt('1702329'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180604',
+            'name' => 'FADHIL MUHAMMAD AZKA',
+            'password' => bcrypt('10180604'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701969',
-        //     'name' => 'Faisal ',
-        //     // 'email' => 'admin@admin.com',
-        //     'password' => bcrypt('1701969'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180605',
+            'name' => 'FAKHRI PUTRA NENDA',
+            'password' => bcrypt('10180605'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701583',
-        //     'name' => 'Guntur Nugraha',
-        //     'password' => bcrypt('1701583'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180606',
+            'name' => 'FARHAN FATURRAHMAN',
+            'password' => bcrypt('10180606'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1705007',
-        //     'name' => 'Hilmi Adlannaafi',
-        //     'password' => bcrypt('1705007'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180607',
+            'name' => 'FITRA AKSAN NURPRIYA',
+            'password' => bcrypt('10180607'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701913',
-        //     'name' => 'Laudita Latifah',
-        //     'password' => bcrypt('1701913'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180608',
+            'name' => 'HAIDIR YUDATAMA',
+            'password' => bcrypt('10180608'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702559',
-        //     'name' => 'M. Habib Ibnu ',
-        //     'password' => bcrypt('1702559'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180609',
+            'name' => 'IRSYAD ROSYADI',
+            'password' => bcrypt('10180609'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701112',
-        //     'name' => 'Meirista ',
-        //     'password' => bcrypt('1701112'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180610',
+            'name' => 'JUDIKA',
+            'password' => bcrypt('10180610'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1700138',
-        //     'name' => 'Mia Rosmiati',
-        //     'password' => bcrypt('1700138'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180611',
+            'name' => 'LENA MARLENA',
+            'password' => bcrypt('10180611'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1705401',
-        //     'name' => 'Muhammad Faisal Alfarizki',
-        //     'password' => bcrypt('1705401'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180612',
+            'name' => 'MAURRA GIANNY RASHELIA',
+            'password' => bcrypt('10180612'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1703168',
-        //     'name' => 'Muhammad Nugraha',
-        //     'password' => bcrypt('1703168'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180613',
+            'name' => 'MOHAMAD GIRI SUNDAVA',
+            'password' => bcrypt('10180613'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702897',
-        //     'name' => 'Naufal Nur Azmi',
-        //     'password' => bcrypt('1702897'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180614',
+            'name' => 'MUHAMAD FACHRIL FADILLAH',
+            'password' => bcrypt('10180614'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701113',
-        //     'name' => 'Niko C',
-        //     'password' => bcrypt('1701113'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180615',
+            'name' => 'MUHAMMAD FAUZAN',
+            'password' => bcrypt('10180615'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702658',
-        //     'name' => 'Opik Sofian',
-        //     'password' => bcrypt('1702658'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180616',
+            'name' => 'MUHAMMAD YUDHA PRATAMA',
+            'password' => bcrypt('10180616'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1703473',
-        //     'name' => 'Pernik Dessi Y',
-        //     'password' => bcrypt('1703473'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180617',
+            'name' => 'NURHALIZA DEWI PRASETYO',
+            'password' => bcrypt('10180617'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702235',
-        //     'name' => 'Purnama Muntaharridwan',
-        //     'password' => bcrypt('1702235'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180618',
+            'name' => 'RAHMAH AMBARWATI',
+            'password' => bcrypt('10180618'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1703036',
-        //     'name' => 'Raka Rahmat G ',
-        //     'password' => bcrypt('1703036'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180619',
+            'name' => 'RAIHAN AKBAR',
+            'password' => bcrypt('10180619'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701507',
-        //     'name' => 'Ramdan Syaripudin ',
-        //     'password' => bcrypt('1701507'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180620',
+            'name' => 'RAMADHANA RIZKI ZULKARNAEN',
+            'password' => bcrypt('10180620'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702642',
-        //     'name' => 'Reni Nuryati',
-        //     'password' => bcrypt('1702642'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180621',
+            'name' => 'RANGGA WIJAYA KUSUMAH',
+            'password' => bcrypt('10180621'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1701575',
-        //     'name' => 'Risky Mulia',
-        //     'password' => bcrypt('1701575'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180622',
+            'name' => 'REYNALDA ADY SAPUTRI',
+            'password' => bcrypt('10180622'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1705508',
-        //     'name' => 'Taufik Nurrahman P',
-        //     'password' => bcrypt('1705508'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180623',
+            'name' => 'REZA MUHAMMAD PRATAMA',
+            'password' => bcrypt('10180623'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1705685',
-        //     'name' => 'Vania Apriliana',
-        //     'password' => bcrypt('1705685'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180624',
+            'name' => 'RIZKY FAHRUDIN',
+            'password' => bcrypt('10180624'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702092',
-        //     'name' => 'Wawan Setiawan',
-        //     'password' => bcrypt('1702092'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180625',
+            'name' => 'SITI NURJANAH',
+            'password' => bcrypt('10180625'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1702669',
-        //     'name' => 'Willy Chandra',
-        //     'password' => bcrypt('1702669'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180626',
+            'name' => 'WIDIA SIPA NURSILA',
+            'password' => bcrypt('10180626'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1700538',
-        //     'name' => 'Yanrie Faisal',
-        //     'password' => bcrypt('1700538'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180627',
+            'name' => 'WILDAN SADDAM NUGRAHA',
+            'password' => bcrypt('10180627'),
+            'level' => 1,
+        ]);
 
-        // DB::table('users')->insert([
-        //     'nim' => '1700795',
-        //     'name' => 'Yayang Sri Marlina',
-        //     'password' => bcrypt('1700795'),
-        //     'level' => 1,
-        // ]);
+        DB::table('users')->insert([
+            'nim' => '10180628',
+            'name' => 'WINDA SRI FANI HERAWATI',
+            'password' => bcrypt('10180628'),
+            'level' => 1,
+        ]);
+
+        DB::table('users')->insert([
+            'nim' => '10180629',
+            'name' => 'ZEHAN NURHAFIZH',
+            'password' => bcrypt('10180629'),
+            'level' => 1,
+        ]);
+        
     }
 }
