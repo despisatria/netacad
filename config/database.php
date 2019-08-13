@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
+$heroku_db_url = parse_url(env('DATABASE_URL', "postgres://zeapwbrjlvegtz:f5b37064f67e9edc232118e980220f4f6e65113c62cc03c14a9e159e25d96780@ec2-50-19-124-157.compute-1.amazonaws.com:5432/d7tueq0nsae8u"));
 
 return [
 
@@ -85,6 +86,17 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
+        ],
+
+        'pg-heroku' => [
+            'driver'   => 'pgsql',
+            'host'     => $heroku_db_url['host'],
+            'database' => substr($heroku_db_url['path'], 1),
+            'username' => $heroku_db_url['user'],
+            'password' => $heroku_db_url['pass'],
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
         ],
 
     ],
