@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'auth\LoginController@viewLogin');
+Route::get('/', 'Auth\LoginController@viewLogin');
 
 Auth::routes();
 
